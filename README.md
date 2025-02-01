@@ -16,9 +16,9 @@
 
 ## 2. Stakeholders
 
-**Client:** University Capstone Project  
+**Client:** YouCode
 
-**Development Team:** [Your Name or Team]  
+**Development Team:** [Reda  Jenhaji] 
 
 **End Users:**  
 - **Visitors:** Can explore wallpapers but lack purchasing privileges.  
