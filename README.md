@@ -1,150 +1,126 @@
-Cahier des Charges for Wallpaper eCommerce Website
+# Cahier des Charges for Wallpaper eCommerce Platform
 
-1. Project Overview
+## 1. Project Overview
 
-Project Name: Wallpaper Haven
+**Project Name:** Wallpaper Haven  
 
-Objective: Develop an eCommerce website where users can browse, preview, customize, and purchase wallpapers.
+**Objective:** Design and implement a robust eCommerce platform that enables users to browse, preview, customize, and purchase wallpapers efficiently.  
 
-Key Features:
+**Core Features:**  
+- Real-time wallpaper preview functionality on different wall types.  
+- A user-driven wallpaper customization tool.  
+- Seller portal for managing wallpaper listings.  
+- Secure and seamless transaction processing.  
 
-Users can see how wallpapers look on different walls before purchasing.
+---
 
-Buyers can create their own wallpaper designs.
+## 2. Stakeholders
 
-Sellers can upload and manage their wallpapers.
+**Client:** University Capstone Project  
 
-2. Stakeholders
+**Development Team:** [Your Name or Team]  
 
-Client: University Project
+**End Users:**  
+- **Visitors:** Can explore wallpapers but lack purchasing privileges.  
+- **Buyers (Registered Users):** Can purchase wallpapers and design their own custom styles.  
+- **Sellers:** Have access to an exclusive dashboard to upload, manage, and market their wallpapers.  
+- **Administrator:** Oversees the platform, handling user management, product moderation, and order fulfillment.  
 
-Developer: [Your Name]
+---
 
-End Users:
+## 3. Functional Requirements
 
-Visitors: Can browse wallpapers but cannot purchase.
+### User Features (Front Office)  
+**Browsing & Filtering:**  
+- Users can filter wallpapers by color, pattern, material, and price.  
+- Advanced search with keyword matching.  
 
-Buyers (Users): Can purchase wallpapers and create custom designs.
+**Interactive Wallpaper Preview:** ✅  
+- Users can visualize selected wallpapers on predefined room templates.  
+- Optional feature for uploading personal room images (Advanced functionality).  
 
-Sellers: Can upload and manage their own wallpapers.
+**Wallpaper Customization Module:**  
+- Buyers can create personalized wallpaper designs using a dedicated editor.  
+- Upload custom images and apply modifications like scaling, effects, or tiling.  
 
-Admin: Manages users, products, and orders.
+**User Authentication & Profile Management:**  
+- Secure account registration and login.  
+- User dashboard to track orders and manage saved wallpapers.  
 
-3. Functional Requirements
+**Shopping Cart & Payment Processing:**  
+- Ability to add multiple wallpapers to the cart.  
+- Secure checkout options (cash-on-delivery initially, with possible Stripe/PayPal integration in later phases).  
 
-User Features (Front Office)
+### Seller Features  
+**Seller Dashboard:**  
+- Interface to upload and manage wallpaper listings.  
+- Pricing and stock adjustments.  
+- Sales analytics and order management.  
 
-Browsing & Searching:
+### Admin Features (Back Office)  
+**Product & Order Management:**  
+- CRUD operations on wallpaper listings.  
+- Order tracking and fulfillment.  
 
-Filter wallpapers by color, pattern, material, price
+**User & Seller Management:**  
+- Ability to approve or suspend seller accounts.  
+- Review and moderate uploaded wallpapers.  
 
-Search functionality
+---
 
-Wallpaper Preview Feature: ✅
+## 4. Technical Specifications
 
-Users can select a wallpaper and see it applied to different wall styles
+**Frontend Stack:** HTML, Tailwind CSS, Vanilla JavaScript  
 
-Option to upload their own room photo (Advanced)
+**Backend Stack:** PHP with MySQL (using PDO for database interactions and security enhancements)  
 
-Custom Wallpaper Design:
+**Database Structure:**  
+- Tables for users, wallpapers, orders, and transactions.  
+- Indexing strategies for optimized query performance.  
 
-Buyers can create and customize their own wallpaper designs using an online editor.
+**Hosting & Deployment:**  
+- Initial testing on local environments.  
+- Production deployment considerations (e.g., VPS or cloud hosting options).  
 
-Option to upload custom images and apply effects.
+---
 
-User Authentication:
+## 5. UI/UX Considerations
 
-Register/Login
+- Wireframes should illustrate key pages, including:  
+  - Homepage  
+  - Product detail and preview pages  
+  - Wallpaper customization tool  
+  - Seller dashboard  
+  - Checkout and payment processing  
+- A mobile-responsive design strategy should be integrated.  
+- Accessibility compliance for a diverse user base.  
 
-Profile management (view orders, saved wallpapers)
+---
 
-Shopping Cart & Checkout:
+## 6. Project Timeline & Milestones
 
-Add to cart
+| **Phase** | **Task** | **Estimated Completion** |  
+|-----------|----------|--------------------------|  
+| Phase 1   | Project initiation, research, and tech stack setup | [Date] |  
+| Phase 2   | Database design, authentication, and seller onboarding | [Date] |  
+| Phase 3   | Wallpaper preview and customization module development | [Date] |  
+| Phase 4   | eCommerce functionalities (cart, checkout, transaction handling) | [Date] |  
+| Phase 5   | Testing, debugging, security enhancements, and deployment | [Date] |  
 
-Secure checkout (basic: cash-on-delivery or advanced: Stripe/PayPal integration)
+---
 
-Seller Features
+## 7. Constraints & Risks
 
-Seller Dashboard:
+- **Time Limitation:** Project completion within a four-month timeframe.  
+- **Technical Complexity:** Implementing real-time wallpaper visualization efficiently.  
+- **Security Considerations:**  
+  - Protection against SQL injection and XSS attacks.  
+  - Secure payment processing compliance.  
 
-Upload wallpapers for sale.
+---
 
-Manage uploaded wallpapers (edit, delete, update pricing, etc.).
+## Next Steps
 
-View and manage sales orders.
-
-Admin Features (Back Office)
-
-Product Management: Add, edit, delete wallpapers
-
-Order Management: View, update order status
-
-User & Seller Management: View registered customers and sellers, manage accounts.
-
-4. Technical Specifications
-
-Frontend: HTML, Tailwind CSS, JavaScript
-
-Backend: PHP (with MySQL, using PDO for security)
-
-Database: MySQL (tables for users, wallpapers, orders, sellers, etc.)
-
-Hosting: Local (for testing) → Live hosting (when deployed)
-
-5. Wireframes & UI/UX
-
-Sketch or describe how the main pages will look (home, product, preview page, custom design page, seller dashboard, cart, etc.)
-
-Do you have a Figma design, or should we draft wireframes together?
-
-6. Project Timeline
-
-Phase
-
-Task
-
-Deadline
-
-Phase 1
-
-Project planning & tech setup
-
-[Date]
-
-Phase 2
-
-Database & authentication
-
-[Date]
-
-Phase 3
-
-Wallpaper preview & custom design feature
-
-[Date]
-
-Phase 4
-
-eCommerce functions (cart, checkout, seller dashboard)
-
-[Date]
-
-Phase 5
-
-Testing & Deployment
-
-[Date]
-
-7. Constraints & Risks
-
-Time Constraint: 4 months to complete
-
-Technical Challenge: Implementing the wallpaper preview and custom design feature efficiently
-
-Security Concerns: Protecting user data and payment security
-
-Next 
-
-
-
+1. Establish a database schema and document relationships.  
+2. Create initial wireframes and UI prototypes.  
+3. Set up a GitHub repository and development workflow.  
